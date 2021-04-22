@@ -1,0 +1,20 @@
+BIMA one:
+
+{
+  "customerInfo": {
+    "msisdn": "02455421458",
+    "membershipNumber": "170530-0245-5421-458-0"
+  },
+  "subscriptionInfo": [
+    {
+      "policyInfo": {
+        "policyCode": "BD_BP003_01",
+        "modificationChannel": 15,
+        "modifiedBy": "BD001_000534",
+        "modifiedDate": "2017-05-30 16:07:15",
+        "policyPurchaseCycle": "02455421458_20170530_0118495",
+        "subscriptionStatus": 7
+      }
+    }
+  ]
+}
