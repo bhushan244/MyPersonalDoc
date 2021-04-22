@@ -1,0 +1,97 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 49 (0x31)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=IN, ST=KA, L=Bangalore, O=Milvik-SE, OU=ManagedIT, CN=Milvik-SE CA/name=server/emailAddress=info@milvik.se
+        Validity
+            Not Before: Dec 17 05:20:55 2017 GMT
+            Not After : Dec 15 05:20:55 2027 GMT
+        Subject: C=IN, ST=KA, L=Bangalore, O=Milvik-SE, OU=ManagedIT, CN=nagabhushan.d/name=server/emailAddress=info@milvik.se
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:d7:3d:23:8a:11:73:a2:b7:54:d4:47:d7:cd:93:
+                    a8:d5:0c:ac:07:01:c5:e0:bc:a9:92:d5:f8:87:31:
+                    f4:0d:32:98:68:13:bb:bb:4d:7d:7c:1f:04:fb:51:
+                    ef:20:a0:fb:c7:cf:56:67:11:e2:8c:1d:b5:f7:63:
+                    a2:23:50:4b:00:aa:ac:37:56:05:89:fc:63:3d:35:
+                    54:86:5d:26:16:0b:ee:02:98:89:d8:66:bc:1a:aa:
+                    5c:81:e0:e6:2f:8a:67:91:23:aa:6c:64:6a:54:3a:
+                    55:f3:23:9c:0d:7b:cd:74:e8:95:71:6b:e9:24:28:
+                    ab:db:6c:91:32:1b:59:cf:9d:12:27:e5:e8:1f:9c:
+                    f4:c7:20:c4:c3:de:4a:f9:5b:d5:b5:79:f9:82:80:
+                    dd:cd:63:b2:e3:b8:89:8e:48:a0:fc:c4:48:74:5b:
+                    71:af:58:8b:ea:84:27:11:51:86:5c:56:e4:eb:5f:
+                    26:6c:db:3c:3c:9e:be:47:e5:eb:5c:aa:d3:4a:ea:
+                    ee:ce:76:21:9d:7a:f8:f1:9b:6b:7c:8d:fa:86:85:
+                    9c:71:67:8d:69:1a:86:6b:bd:24:c1:54:93:a0:c5:
+                    82:cc:84:6a:19:80:58:8d:e4:31:15:8a:e8:7f:14:
+                    f2:50:5a:88:73:4c:51:98:0d:f0:b7:e0:de:7a:8e:
+                    83:6d
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                B0:E7:4F:21:0D:89:54:2D:59:49:CB:8B:6C:73:4F:5E:46:65:C2:7C
+            X509v3 Authority Key Identifier: 
+                keyid:BD:46:EF:1F:7C:DF:81:F8:A4:35:88:C2:D2:4D:19:DA:65:E1:A1:51
+                DirName:/C=IN/ST=KA/L=Bangalore/O=Milvik-SE/OU=ManagedIT/CN=Milvik-SE CA/name=server/emailAddress=info@milvik.se
+                serial:F6:D0:56:F7:3C:97:97:DE
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+            X509v3 Subject Alternative Name: 
+                DNS:nagabhushan.d
+    Signature Algorithm: sha256WithRSAEncryption
+         84:d9:93:19:f9:ad:8c:5d:fb:e8:28:1e:04:79:9c:a2:30:92:
+         a8:7c:6b:b7:47:87:61:41:3f:7d:67:28:21:40:75:71:af:34:
+         cb:01:8a:64:11:13:67:c1:7e:e5:3c:83:72:5f:29:96:38:db:
+         ac:be:8f:40:82:2a:af:b8:b6:57:7f:77:4b:e1:38:28:87:e1:
+         e7:68:49:3d:bb:b7:72:14:d1:99:a7:57:39:4d:32:23:cb:0e:
+         ff:b0:20:b6:c1:88:d1:8c:03:55:b6:45:fa:02:d3:d0:60:84:
+         81:55:9b:ac:0a:1e:dd:8b:8d:a4:62:b3:09:b6:be:df:f4:a0:
+         87:3f:2e:8e:42:96:5c:64:21:4f:e8:33:d5:bc:2f:a3:8c:f2:
+         ea:cf:04:65:f2:b5:07:e9:1a:83:0e:a6:4a:17:72:82:ba:17:
+         4d:2d:63:49:98:74:ae:76:b4:42:84:5d:51:6b:df:46:8f:c1:
+         f6:4a:3c:e7:16:c2:28:21:9b:b5:a3:ea:42:29:66:09:72:bf:
+         5b:b6:fb:8c:81:4b:e6:f4:92:a8:fe:91:be:c7:29:4a:74:73:
+         5d:b0:57:60:a4:1e:fa:04:e4:1c:43:19:79:f0:12:b0:40:6d:
+         4e:69:54:c3:62:9f:7c:70:d5:04:34:c3:1c:ce:f8:94:fe:23:
+         06:d3:8d:a5
+-----BEGIN CERTIFICATE-----
+MIIFKDCCBBCgAwIBAgIBMTANBgkqhkiG9w0BAQsFADCBnTELMAkGA1UEBhMCSU4x
+CzAJBgNVBAgTAktBMRIwEAYDVQQHEwlCYW5nYWxvcmUxEjAQBgNVBAoTCU1pbHZp
+ay1TRTESMBAGA1UECxMJTWFuYWdlZElUMRUwEwYDVQQDEwxNaWx2aWstU0UgQ0Ex
+DzANBgNVBCkTBnNlcnZlcjEdMBsGCSqGSIb3DQEJARYOaW5mb0BtaWx2aWsuc2Uw
+HhcNMTcxMjE3MDUyMDU1WhcNMjcxMjE1MDUyMDU1WjCBnjELMAkGA1UEBhMCSU4x
+CzAJBgNVBAgTAktBMRIwEAYDVQQHEwlCYW5nYWxvcmUxEjAQBgNVBAoTCU1pbHZp
+ay1TRTESMBAGA1UECxMJTWFuYWdlZElUMRYwFAYDVQQDEw1uYWdhYmh1c2hhbi5k
+MQ8wDQYDVQQpEwZzZXJ2ZXIxHTAbBgkqhkiG9w0BCQEWDmluZm9AbWlsdmlrLnNl
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1z0jihFzordU1EfXzZOo
+1QysBwHF4LypktX4hzH0DTKYaBO7u019fB8E+1HvIKD7x89WZxHijB2192OiI1BL
+AKqsN1YFifxjPTVUhl0mFgvuApiJ2Ga8GqpcgeDmL4pnkSOqbGRqVDpV8yOcDXvN
+dOiVcWvpJCir22yRMhtZz50SJ+XoH5z0xyDEw95K+VvVtXn5goDdzWOy47iJjkig
+/MRIdFtxr1iL6oQnEVGGXFbk618mbNs8PJ6+R+XrXKrTSuruznYhnXr48ZtrfI36
+hoWccWeNaRqGa70kwVSToMWCzIRqGYBYjeQxFYrofxTyUFqIc0xRmA3wt+Deeo6D
+bQIDAQABo4IBbjCCAWowCQYDVR0TBAIwADAtBglghkgBhvhCAQ0EIBYeRWFzeS1S
+U0EgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQWBBSw508hDYlULVlJy4ts
+c09eRmXCfDCB0gYDVR0jBIHKMIHHgBS9Ru8ffN+B+KQ1iMLSTRnaZeGhUaGBo6SB
+oDCBnTELMAkGA1UEBhMCSU4xCzAJBgNVBAgTAktBMRIwEAYDVQQHEwlCYW5nYWxv
+cmUxEjAQBgNVBAoTCU1pbHZpay1TRTESMBAGA1UECxMJTWFuYWdlZElUMRUwEwYD
+VQQDEwxNaWx2aWstU0UgQ0ExDzANBgNVBCkTBnNlcnZlcjEdMBsGCSqGSIb3DQEJ
+ARYOaW5mb0BtaWx2aWsuc2WCCQD20Fb3PJeX3jATBgNVHSUEDDAKBggrBgEFBQcD
+AjALBgNVHQ8EBAMCB4AwGAYDVR0RBBEwD4INbmFnYWJodXNoYW4uZDANBgkqhkiG
+9w0BAQsFAAOCAQEAhNmTGfmtjF376CgeBHmcojCSqHxrt0eHYUE/fWcoIUB1ca80
+ywGKZBETZ8F+5TyDcl8pljjbrL6PQIIqr7i2V393S+E4KIfh52hJPbu3chTRmadX
+OU0yI8sO/7AgtsGI0YwDVbZF+gLT0GCEgVWbrAoe3YuNpGKzCba+3/Sghz8ujkKW
+XGQhT+gz1bwvo4zy6s8EZfK1B+kagw6mShdygroXTS1jSZh0rna0QoRdUWvfRo/B
+9ko85xbCKCGbtaPqQilmCXK/W7b7jIFL5vSSqP6RvscpSnRzXbBXYKQe+gTkHEMZ
+efASsEBtTmlUw2KffHDVBDTDHM74lP4jBtONpQ==
+-----END CERTIFICATE-----

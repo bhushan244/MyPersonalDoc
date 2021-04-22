@@ -1,0 +1,360 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2018.06.19 11:15:16 =~=~=~=~=~=~=~=~=~=~=~=
+login as: nagabhushan           nagabhushan.d
+Authenticating with public key "rsa-key-20171220"
+Passphrase for key "rsa-key-20171220": 
+Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 3.13.0-135-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Tue Jun 19 05:42:41 UTC 2018
+
+  System load:  0.0                Processes:           159
+  Usage of /:   36.3% of 19.55GB   Users logged in:     6
+  Memory usage: 23%                IP address for eth0: 10.127.212.98
+  Swap usage:   4%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+37 packages can be updated.
+0 updates are security updates.
+
+New release '16.04.4 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Tue Jun 19 05:42:41 2018 from 182.74.170.126
+]0;nagabhushan.d@ap-term-01: ~nagabhushan.d@ap-term-01:~$ ssh nagabhushan.d@gh-btc-app-01.sa.bimamobile.internal
+Enter passphrase for key '/home/nagabhushan.d/.ssh/id_rsa': 
+Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 3.13.0-141-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Mon Jun 18 08:59:32 UTC 2018
+
+  System load:  0.0                Processes:           114
+  Usage of /:   40.4% of 29.39GB   Users logged in:     1
+  Memory usage: 72%                IP address for eth0: 10.127.216.152
+  Swap usage:   3%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+32 packages can be updated.
+25 updates are security updates.
+
+
+*** System restart required ***
+Last login: Mon Jun 18 08:59:34 2018 from ip-10-127-212-98.sa-east-1.compute.internal
+]0;nagabhushan.d@gh-btc-app-01: ~nagabhushan.d@gh-btc-app-01:~$ mysql -h gh-btc-rds-01.sa.bimamobile.internal -P 3306 -u btcadmin -petV76RNzmQCbZ9UtRAtZ24xa
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 6924
+Server version: 5.6.37-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use btc_gh
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> 
+mysql> show tables;
++---------------------------------+
+| Tables_in_btc_gh                |
++---------------------------------+
+| admin_config                    |
+| agent_incentive                 |
+| agent_qascore                   |
+| auto_membership_card            |
+| bank_account_type               |
+| bank_info                       |
+| beneficiary_info                |
+| beneficiary_info_history        |
+| beneficiary_relationship_info   |
+| bfhp_deduction_transaction      |
+| bfhp_option_info                |
+| brand_info                      |
+| call_category                   |
+| call_history_backup             |
+| call_history_nc                 |
+| card_batch                      |
+| city_info                       |
+| coaching_prog_prod_mapping      |
+| coaching_progm_subn             |
+| coaching_progm_template         |
+| coaching_program                |
+| coaching_program_sms            |
+| cover_change_detail             |
+| customer_call_info              |
+| customer_cover                  |
+| customer_credit_info            |
+| customer_deductions             |
+| customer_info                   |
+| customer_modification_history   |
+| customer_payment_status         |
+| customer_policy                 |
+| deduction_transactions          |
+| dereg_customer_info             |
+| eye_test_info                   |
+| functional_access               |
+| functional_type                 |
+| generated_pin                   |
+| hash_history                    |
+| holidays                        |
+| id_type                         |
+| limit_modification_history      |
+| limit_modification_types        |
+| mandate_request                 |
+| mandate_status                  |
+| marital_status                  |
+| marketing_channel               |
+| medical_action                  |
+| medical_concern                 |
+| membership_card                 |
+| membership_card_status          |
+| menu                            |
+| menu_role_mapping               |
+| net_earnings                    |
+| payment_method                  |
+| payment_type                    |
+| policy_info                     |
+| policy_option_mapping           |
+| policy_role_mapping             |
+| policy_status                   |
+| product_deduction_info          |
+| product_info                    |
+| province_info                   |
+| query_type                      |
+| registration_channels           |
+| reinitiate_status_temp          |
+| reminder_sms                    |
+| renew_call_list_status          |
+| renew_call_list_tg              |
+| role_access                     |
+| role_info                       |
+| role_payment_method_mapping     |
+| sales_channel                   |
+| scratch_card                    |
+| sms_batch                       |
+| sms_info                        |
+| sms_template_info               |
+| sort_codes                      |
+| status_history                  |
+| support_automid_customer_upload |
+| support_bisa_doctor_sms         |
+| support_bisa_doctor_sms_unique  |
+| support_report_helper           |
+| support_rok_report              |
+| support_temp_renew              |
+| support_temp_scratch_cards      |
+| support_temp_scratch_pin        |
+| support_user_temp_transaction   |
+| update_coaching_progm           |
+| user_aggregated_transaction     |
+| user_hash                       |
+| user_info                       |
+| user_transaction                |
+| ussd_renewal                    |
+| ussd_template_info              |
+| ussd_transaction                |
++---------------------------------+
+95 rows in set (0.00 sec)
+
+mysql> select * from customer_info where primary_msisdn=0205558893;
++---------+-----------------------+----------------+------------------+-----------+--------+---------+------+-----+-------------+-----------------+---------------+---------------------+----------------+---------------------+--------------------+-------------------+-----------------+------------+------------+-------------------------+-------------------------+----------------------------+------------------+---------------+---------------------+------------+-----------------+------------+-----------+----------+----------------+---------------+---------------------+----------------+
+| cust_id | membership_card_id_fk | primary_msisdn | secondary_msisdn | firstname | gender | surname | dob  | age | implied_age | is_deregistered | created_by_fk | created_date        | modified_by_fk | modified_date       | deregistered_by_fk | deregistered_date | additional_info | city_id_fk | city_other | marketing_channel_id_fk | other_marketing_channel | auto_membership_card_id_fk | having_mm_wallet | wallet_number | residential_address | occupation | mailing_address | id_type_fk | id_number | email_id | marital_status | renew_allowed | sales_channel_id_fk | payment_status |
++---------+-----------------------+----------------+------------------+-----------+--------+---------+------+-----+-------------+-----------------+---------------+---------------------+----------------+---------------------+--------------------+-------------------+-----------------+------------+------------+-------------------------+-------------------------+----------------------------+------------------+---------------+---------------------+------------+-----------------+------------+-----------+----------+----------------+---------------+---------------------+----------------+
+|  382491 |                340627 | 0205558893     | 0207178889       | TEST      | NULL   | TEST    | NULL |  25 |          25 |               0 |             1 | 2018-06-19 05:45:09 |              1 | 2018-06-19 05:45:09 |               NULL | NULL              | NULL            |         45 | NULL       |                       2 | NULL                    |                       NULL |                1 | 0205558893    |                     | NULL       |                 |       NULL | NULL      | NULL     |           NULL |             1 |                   2 |              1 |
++---------+-----------------------+----------------+------------------+-----------+--------+---------+------+-----+-------------+-----------------+---------------+---------------------+----------------+---------------------+--------------------+-------------------+-----------------+------------+------------+-------------------------+-------------------------+----------------------------+------------------+---------------+---------------------+------------+-----------------+------------+-----------+----------+----------------+---------------+---------------------+----------------+
+1 row in set (0.57 sec)
+
+mysql> select * from customer_poci[K[K[K[Kpolicy where cust_id_fk=382491;
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+| customer_policy_id | membership_card_id_fk | scratchcard_pin_id_fk | policy_no | cust_id_fk | policy_id_fk | product_id | created_by_fk | created_date        | is_confirmed | confirmation_date | payment_confirmed_date | start_date | expiration_date | policy_status | sales_value | geo_latitude | geo_longitude | renewal_pin | auto_membership_card_id_fk | is_deduction_attempted | is_eligible_free_cover | channel_id_fk | payment_method_id_fk | deregistered_date | deregistered_by_fk | reason | cover_count | preauthorized_by | preauthorized_date | changed_to_pending_by | pending_date | mandate_creation_date | mtn_mandate_id | is_mandate_cancelled | renew_allowed | third_party_ref_no |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+|             577614 |                340627 |                641484 |    577614 |     382491 |           33 |          7 |             1 | 2018-06-19 05:45:09 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                   NULL |                   NULL |             1 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577614             |
+|             577615 |                340627 |                641484 |    577614 |     382491 |           39 |          7 |             1 | 2018-06-19 05:45:09 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           3 | NULL         | NULL          | NULL        |                       NULL |                   NULL |                   NULL |             1 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577615             |
+|             577616 |                340627 |                641484 |    577614 |     382491 |           35 |          7 |             1 | 2018-06-19 05:45:09 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                   NULL |                   NULL |             1 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577616             |
+|             577617 |                340627 |                641484 |    577614 |     382491 |           36 |          7 |             1 | 2018-06-19 05:45:09 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                   NULL |                   NULL |             1 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577617             |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+4 rows in set (0.00 sec)
+
+mysql> [Kmysql> select * from customer_policy where cust_id_fk=382491;
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+| customer_policy_id | membership_card_id_fk | scratchcard_pin_id_fk | policy_no | cust_id_fk | policy_id_fk | product_id | created_by_fk | created_date        | is_confirmed | confirmation_date | payment_confirmed_date | start_date | expiration_date | policy_status | sales_value | geo_latitude | geo_longitude | renewal_pin | auto_membership_card_id_fk | is_deduction_attempted | is_eligible_free_cover | channel_id_fk | payment_method_id_fk | deregistered_date | deregistered_by_fk | reason | cover_count | preauthorized_by | preauthorized_date | changed_to_pending_by | pending_date | mandate_creation_date | mtn_mandate_id | is_mandate_cancelled | renew_allowed | third_party_ref_no |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+|             577614 |                340627 |                641484 |    577614 |     382491 |           33 |          7 |             1 | 2018-06-19 05:45:09 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                      1 |                   NULL |             1 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577614             |
+|             577615 |                340627 |                641484 |    577614 |     382491 |           39 |          7 |             1 | 2018-06-19 05:45:09 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           3 | NULL         | NULL          | NULL        |                       NULL |                      1 |                   NULL |             1 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577615             |
+|             577616 |                340627 |                641484 |    577614 |     382491 |           35 |          7 |             1 | 2018-06-19 05:45:09 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                      1 |                   NULL |             1 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577616             |
+|             577617 |                340627 |                641484 |    577614 |     382491 |           36 |          7 |             1 | 2018-06-19 05:45:09 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                      1 |                   NULL |             1 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577617             |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+4 rows in set (0.01 sec)
+
+mysql> login as: login as: nagabhushan.d
+Authenticating with public key "rsa-key-20171220"
+Passphrase for key "rsa-key-20171220": 
+Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 3.13.0-135-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Tue Jun 19 09:07:15 UTC 2018
+
+  System load:  0.0                Processes:           201
+  Usage of /:   36.3% of 19.55GB   Users logged in:     11
+  Memory usage: 29%                IP address for eth0: 10.127.212.98
+  Swap usage:   4%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+37 packages can be updated.
+0 updates are security updates.
+
+New release '16.04.4 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Tue Jun 19 06:28:22 2018 from 121.242.128.86
+]0;nagabhushan.d@ap-term-01: ~nagabhushan.d@ap-term-01:~$ ssh nagabhushan.d@gh-btc-app-01.sa.bimamobile.internal
+Enter passphrase for key '/home/nagabhushan.d/.ssh/id_rsa': 
+Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 3.13.0-141-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Tue Jun 19 05:46:04 UTC 2018
+
+  System load:  0.0                Processes:           110
+  Usage of /:   40.5% of 29.39GB   Users logged in:     0
+  Memory usage: 72%                IP address for eth0: 10.127.216.152
+  Swap usage:   3%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+32 packages can be updated.
+25 updates are security updates.
+
+New release '16.04.4 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+Last login: Tue Jun 19 05:46:04 2018 from ip-10-127-212-98.sa-east-1.compute.internal
+]0;nagabhushan.d@gh-btc-app-01: ~nagabhushan.d@gh-btc-app-01:~$ mysql -h gh-btc-rds-01.sa.bimamobile.internal -P 3306 -u btcadmin -petV76RNzmQCbZ9UtRAtZ24xa
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 6969
+Server version: 5.6.37-log MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use btc_gh;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> select * from customer_info where primary_msisdn=0205558895;
++---------+-----------------------+----------------+------------------+-----------+--------+---------+------+-----+-------------+-----------------+---------------+---------------------+----------------+---------------------+--------------------+-------------------+-----------------+------------+------------+-------------------------+-------------------------+----------------------------+------------------+---------------+---------------------+------------+-----------------+------------+-----------+----------+----------------+---------------+---------------------+----------------+
+| cust_id | membership_card_id_fk | primary_msisdn | secondary_msisdn | firstname | gender | surname | dob  | age | implied_age | is_deregistered | created_by_fk | created_date        | modified_by_fk | modified_date       | deregistered_by_fk | deregistered_date | additional_info | city_id_fk | city_other | marketing_channel_id_fk | other_marketing_channel | auto_membership_card_id_fk | having_mm_wallet | wallet_number | residential_address | occupation | mailing_address | id_type_fk | id_number | email_id | marital_status | renew_allowed | sales_channel_id_fk | payment_status |
++---------+-----------------------+----------------+------------------+-----------+--------+---------+------+-----+-------------+-----------------+---------------+---------------------+----------------+---------------------+--------------------+-------------------+-----------------+------------+------------+-------------------------+-------------------------+----------------------------+------------------+---------------+---------------------+------------+-----------------+------------+-----------+----------+----------------+---------------+---------------------+----------------+
+|  382492 |                340628 | 0205558895     | 0207178889       | TEST      | NULL   | TEST    | NULL |  25 |          25 |               0 |             1 | 2018-06-19 09:12:31 |              1 | 2018-06-19 09:12:31 |               NULL | NULL              | NULL            |         46 | NULL       |                       1 | NULL                    |                       NULL |                1 | 0205558895    |                     | NULL       |                 |       NULL | NULL      | NULL     |           NULL |             1 |                   2 |              1 |
++---------+-----------------------+----------------+------------------+-----------+--------+---------+------+-----+-------------+-----------------+---------------+---------------------+----------------+---------------------+--------------------+-------------------+-----------------+------------+------------+-------------------------+-------------------------+----------------------------+------------------+---------------+---------------------+------------+-----------------+------------+-----------+----------+----------------+---------------+---------------------+----------------+
+1 row in set (0.56 sec)
+
+mysql> select * from customer_policy where cust_id_fk=382492;
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+| customer_policy_id | membership_card_id_fk | scratchcard_pin_id_fk | policy_no | cust_id_fk | policy_id_fk | product_id | created_by_fk | created_date        | is_confirmed | confirmation_date | payment_confirmed_date | start_date | expiration_date | policy_status | sales_value | geo_latitude | geo_longitude | renewal_pin | auto_membership_card_id_fk | is_deduction_attempted | is_eligible_free_cover | channel_id_fk | payment_method_id_fk | deregistered_date | deregistered_by_fk | reason | cover_count | preauthorized_by | preauthorized_date | changed_to_pending_by | pending_date | mandate_creation_date | mtn_mandate_id | is_mandate_cancelled | renew_allowed | third_party_ref_no |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+|             577618 |                340628 |                641485 |    577618 |     382492 |           33 |          7 |             1 | 2018-06-19 09:12:31 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                   NULL |                   NULL |             1 |                    2 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577618             |
+|             577619 |                340628 |                641485 |    577618 |     382492 |           39 |          7 |             1 | 2018-06-19 09:12:31 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           3 | NULL         | NULL          | NULL        |                       NULL |                   NULL |                   NULL |             1 |                    2 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577619             |
+|             577620 |                340628 |                641485 |    577618 |     382492 |           35 |          7 |             1 | 2018-06-19 09:12:31 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                   NULL |                   NULL |             1 |                    2 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577620             |
+|             577621 |                340628 |                641485 |    577618 |     382492 |           36 |          7 |             1 | 2018-06-19 09:12:31 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                   NULL |                   NULL |             1 |                    2 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577621             |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from customer_policy where cust_id_fk=382492;
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+---------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+| customer_policy_id | membership_card_id_fk | scratchcard_pin_id_fk | policy_no | cust_id_fk | policy_id_fk | product_id | created_by_fk | created_date        | is_confirmed | confirmation_date   | payment_confirmed_date | start_date | expiration_date | policy_status | sales_value | geo_latitude | geo_longitude | renewal_pin | auto_membership_card_id_fk | is_deduction_attempted | is_eligible_free_cover | channel_id_fk | payment_method_id_fk | deregistered_date | deregistered_by_fk | reason | cover_count | preauthorized_by | preauthorized_date | changed_to_pending_by | pending_date | mandate_creation_date | mtn_mandate_id | is_mandate_cancelled | renew_allowed | third_party_ref_no |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+---------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+|             577618 |                340628 |                641485 |    577618 |     382492 |           33 |          7 |             1 | 2018-06-19 09:12:31 |            1 | 2018-06-19 09:15:42 | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                      1 |                   NULL |             1 |                    2 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | 2018-06-19 09:26:45   | 501055         |                 NULL |             1 | 577618             |
+|             577619 |                340628 |                641485 |    577618 |     382492 |           39 |          7 |             1 | 2018-06-19 09:12:31 |            1 | 2018-06-19 09:15:42 | NULL                   | NULL       | NULL            |             3 |           3 | NULL         | NULL          | NULL        |                       NULL |                   NULL |                   NULL |             1 |                    2 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577619             |
+|             577620 |                340628 |                641485 |    577618 |     382492 |           35 |          7 |             1 | 2018-06-19 09:12:31 |            1 | 2018-06-19 09:15:42 | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                   NULL |                   NULL |             1 |                    2 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577620             |
+|             577621 |                340628 |                641485 |    577618 |     382492 |           36 |          7 |             1 | 2018-06-19 09:12:31 |            1 | 2018-06-19 09:15:42 | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                   NULL |                   NULL |             1 |                    2 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577621             |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+---------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+4 rows in set (0.02 sec)
+
+mysql> select * from customer_policy where  customer_policy_id="577614"[K[C[C[1P577614[C[C[C[C[C[C;
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+| customer_policy_id | membership_card_id_fk | scratchcard_pin_id_fk | policy_no | cust_id_fk | policy_id_fk | product_id | created_by_fk | created_date        | is_confirmed | confirmation_date | payment_confirmed_date | start_date | expiration_date | policy_status | sales_value | geo_latitude | geo_longitude | renewal_pin | auto_membership_card_id_fk | is_deduction_attempted | is_eligible_free_cover | channel_id_fk | payment_method_id_fk | deregistered_date | deregistered_by_fk | reason | cover_count | preauthorized_by | preauthorized_date | changed_to_pending_by | pending_date | mandate_creation_date | mtn_mandate_id | is_mandate_cancelled | renew_allowed | third_party_ref_no |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+|             577614 |                340627 |                641484 |    577614 |     382491 |           33 |          7 |             1 | 2018-06-19 05:45:09 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                      1 |                   NULL |             1 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577614             |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from customer_policy where  customer_policy_id=577614;[K[K[K[K[K[K[K"495824"[K[C[1P495824[C[C[C[C[C[C;
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+| customer_policy_id | membership_card_id_fk | scratchcard_pin_id_fk | policy_no | cust_id_fk | policy_id_fk | product_id | created_by_fk | created_date        | is_confirmed | confirmation_date | payment_confirmed_date | start_date | expiration_date | policy_status | sales_value | geo_latitude | geo_longitude | renewal_pin | auto_membership_card_id_fk | is_deduction_attempted | is_eligible_free_cover | channel_id_fk | payment_method_id_fk | deregistered_date | deregistered_by_fk | reason | cover_count | preauthorized_by | preauthorized_date | changed_to_pending_by | pending_date | mandate_creation_date | mtn_mandate_id | is_mandate_cancelled | renew_allowed | third_party_ref_no |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+|             495824 |                320205 |                561912 |    495824 |     356451 |           33 |          1 |          2075 | 2017-11-09 12:40:14 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                      1 |                   NULL |             3 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | NULL               |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+1 row in set (0.01 sec)
+
+mysql> select * from customer_policy where is_confirmed=0 and confirmation_date IS NULL and is_deduction_attempted IS NULL and payment_method_id_fk=3 and product_id IN  (1,2,3,4,7) order by customer_policy_id desc limit 1;
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+| customer_policy_id | membership_card_id_fk | scratchcard_pin_id_fk | policy_no | cust_id_fk | policy_id_fk | product_id | created_by_fk | created_date        | is_confirmed | confirmation_date | payment_confirmed_date | start_date | expiration_date | policy_status | sales_value | geo_latitude | geo_longitude | renewal_pin | auto_membership_card_id_fk | is_deduction_attempted | is_eligible_free_cover | channel_id_fk | payment_method_id_fk | deregistered_date | deregistered_by_fk | reason | cover_count | preauthorized_by | preauthorized_date | changed_to_pending_by | pending_date | mandate_creation_date | mtn_mandate_id | is_mandate_cancelled | renew_allowed | third_party_ref_no |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+|             577605 |                340624 |                641481 |    577602 |     382488 |           36 |          7 |             1 | 2018-06-18 11:03:09 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                   NULL |                   NULL |             1 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577605             |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+1 row in set (0.16 sec)
+
+mysql> select * from customer_policy where  customer_policy_id="577605[C[C[C[1P577605[C[C[C[C[C[C;
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+| customer_policy_id | membership_card_id_fk | scratchcard_pin_id_fk | policy_no | cust_id_fk | policy_id_fk | product_id | created_by_fk | created_date        | is_confirmed | confirmation_date | payment_confirmed_date | start_date | expiration_date | policy_status | sales_value | geo_latitude | geo_longitude | renewal_pin | auto_membership_card_id_fk | is_deduction_attempted | is_eligible_free_cover | channel_id_fk | payment_method_id_fk | deregistered_date | deregistered_by_fk | reason | cover_count | preauthorized_by | preauthorized_date | changed_to_pending_by | pending_date | mandate_creation_date | mtn_mandate_id | is_mandate_cancelled | renew_allowed | third_party_ref_no |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+|             577605 |                340624 |                641481 |    577602 |     382488 |           36 |          7 |             1 | 2018-06-18 11:03:09 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                   NULL |                   NULL |             1 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | 577605             |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+1 row in set (0.00 sec)
+
+mysql> "498453"[K[K[K[K[K[K[K[Kselect * from customer_policy where  customer_policy_id=577605;[K[K[K[K[K[K[K"498453"[K[C[1P498453[C[C[C[C[C[C;
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+| customer_policy_id | membership_card_id_fk | scratchcard_pin_id_fk | policy_no | cust_id_fk | policy_id_fk | product_id | created_by_fk | created_date        | is_confirmed | confirmation_date | payment_confirmed_date | start_date | expiration_date | policy_status | sales_value | geo_latitude | geo_longitude | renewal_pin | auto_membership_card_id_fk | is_deduction_attempted | is_eligible_free_cover | channel_id_fk | payment_method_id_fk | deregistered_date | deregistered_by_fk | reason | cover_count | preauthorized_by | preauthorized_date | changed_to_pending_by | pending_date | mandate_creation_date | mtn_mandate_id | is_mandate_cancelled | renew_allowed | third_party_ref_no |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+|             498453 |                320802 |                564541 |    498453 |     357503 |           36 |          4 |           353 | 2017-11-16 17:08:00 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                      1 |                   NULL |             1 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | NULL               |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from customer_policy where  customer_policy_id=498453;[K[K[K[K[K[K[K493102;
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+| customer_policy_id | membership_card_id_fk | scratchcard_pin_id_fk | policy_no | cust_id_fk | policy_id_fk | product_id | created_by_fk | created_date        | is_confirmed | confirmation_date | payment_confirmed_date | start_date | expiration_date | policy_status | sales_value | geo_latitude | geo_longitude | renewal_pin | auto_membership_card_id_fk | is_deduction_attempted | is_eligible_free_cover | channel_id_fk | payment_method_id_fk | deregistered_date | deregistered_by_fk | reason | cover_count | preauthorized_by | preauthorized_date | changed_to_pending_by | pending_date | mandate_creation_date | mtn_mandate_id | is_mandate_cancelled | renew_allowed | third_party_ref_no |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+|             493102 |                319542 |                559190 |    493102 |     355354 |           34 |          2 |           353 | 2017-11-03 11:06:40 |            0 | NULL              | NULL                   | NULL       | NULL            |             3 |           2 | NULL         | NULL          | NULL        |                       NULL |                      1 |                   NULL |             1 |                    3 | NULL              |               NULL | NULL   |        NULL |             NULL | NULL               |                  NULL | NULL         | NULL                  | NULL           |                 NULL |             1 | NULL               |
++--------------------+-----------------------+-----------------------+-----------+------------+--------------+------------+---------------+---------------------+--------------+-------------------+------------------------+------------+-----------------+---------------+-------------+--------------+---------------+-------------+----------------------------+------------------------+------------------------+---------------+----------------------+-------------------+--------------------+--------+-------------+------------------+--------------------+-----------------------+--------------+-----------------------+----------------+----------------------+---------------+--------------------+
+1 row in set (0.00 sec)
+
+mysql> 

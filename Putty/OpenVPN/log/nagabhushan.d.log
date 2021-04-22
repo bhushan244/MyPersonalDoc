@@ -1,0 +1,61 @@
+Wed Jun 13 11:14:13 2018 OpenVPN 2.4.4 x86_64-w64-mingw32 [SSL (OpenSSL)] [LZO] [LZ4] [PKCS11] [AEAD] built on Sep 26 2017
+Wed Jun 13 11:14:13 2018 Windows version 6.2 (Windows 8 or greater) 64bit
+Wed Jun 13 11:14:13 2018 library versions: OpenSSL 1.0.2l  25 May 2017, LZO 2.10
+Enter Management Password:
+Wed Jun 13 11:14:13 2018 MANAGEMENT: TCP Socket listening on [AF_INET]127.0.0.1:25340
+Wed Jun 13 11:14:13 2018 Need hold release from management interface, waiting...
+Wed Jun 13 11:14:13 2018 MANAGEMENT: Client connected from [AF_INET]127.0.0.1:25340
+Wed Jun 13 11:14:13 2018 MANAGEMENT: CMD 'state on'
+Wed Jun 13 11:14:13 2018 MANAGEMENT: CMD 'log all on'
+Wed Jun 13 11:14:13 2018 MANAGEMENT: CMD 'echo all on'
+Wed Jun 13 11:14:13 2018 MANAGEMENT: CMD 'hold off'
+Wed Jun 13 11:14:14 2018 MANAGEMENT: CMD 'hold release'
+Wed Jun 13 11:14:14 2018 WARNING: --ns-cert-type is DEPRECATED.  Use --remote-cert-tls instead.
+Wed Jun 13 11:14:14 2018 Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Wed Jun 13 11:14:14 2018 Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Wed Jun 13 11:14:14 2018 TCP/UDP: Preserving recently used remote address: [AF_INET]13.229.162.146:1194
+Wed Jun 13 11:14:14 2018 Socket Buffers: R=[65536->65536] S=[65536->65536]
+Wed Jun 13 11:14:14 2018 UDP link local: (not bound)
+Wed Jun 13 11:14:14 2018 UDP link remote: [AF_INET]13.229.162.146:1194
+Wed Jun 13 11:14:14 2018 MANAGEMENT: >STATE:1528868654,WAIT,,,,,,
+Wed Jun 13 11:14:14 2018 MANAGEMENT: >STATE:1528868654,AUTH,,,,,,
+Wed Jun 13 11:14:14 2018 TLS: Initial packet from [AF_INET]13.229.162.146:1194, sid=bc4f3969 8661e905
+Wed Jun 13 11:14:19 2018 VERIFY OK: depth=1, C=IN, ST=KA, L=Bangalore, O=Milvik-SE, OU=ManagedIT, CN=Milvik-SE CA, name=server, emailAddress=info@milvik.se
+Wed Jun 13 11:14:19 2018 VERIFY OK: nsCertType=SERVER
+Wed Jun 13 11:14:19 2018 VERIFY OK: depth=0, C=IN, ST=KA, L=Bangalore, O=Milvik-SE, OU=ManagedIT, CN=server, name=server, emailAddress=info@milvik.se
+Wed Jun 13 11:14:19 2018 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 2048 bit RSA
+Wed Jun 13 11:14:19 2018 [server] Peer Connection Initiated with [AF_INET]13.229.162.146:1194
+Wed Jun 13 11:14:20 2018 MANAGEMENT: >STATE:1528868660,GET_CONFIG,,,,,,
+Wed Jun 13 11:14:20 2018 SENT CONTROL [server]: 'PUSH_REQUEST' (status=1)
+Wed Jun 13 11:14:20 2018 PUSH: Received control message: 'PUSH_REPLY,route 10.127.208.0 255.255.248.0,dhcp-option DNS 10.127.208.2,route 10.127.224.1,topology net30,ping 10,ping-restart 120,ifconfig 10.127.224.134 10.127.224.133'
+Wed Jun 13 11:14:20 2018 OPTIONS IMPORT: timers and/or timeouts modified
+Wed Jun 13 11:14:20 2018 OPTIONS IMPORT: --ifconfig/up options modified
+Wed Jun 13 11:14:20 2018 OPTIONS IMPORT: route options modified
+Wed Jun 13 11:14:20 2018 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Wed Jun 13 11:14:20 2018 Outgoing Data Channel: Cipher 'AES-128-CBC' initialized with 128 bit key
+Wed Jun 13 11:14:20 2018 Outgoing Data Channel: Using 160 bit message hash 'SHA1' for HMAC authentication
+Wed Jun 13 11:14:20 2018 Incoming Data Channel: Cipher 'AES-128-CBC' initialized with 128 bit key
+Wed Jun 13 11:14:20 2018 Incoming Data Channel: Using 160 bit message hash 'SHA1' for HMAC authentication
+Wed Jun 13 11:14:20 2018 interactive service msg_channel=452
+Wed Jun 13 11:14:20 2018 ROUTE_GATEWAY 172.25.3.1/255.255.255.0 I=3 HWADDR=d8:cb:8a:6e:06:20
+Wed Jun 13 11:14:20 2018 open_tun
+Wed Jun 13 11:14:20 2018 TAP-WIN32 device [Local Area Connection 2] opened: \\.\Global\{246C619C-084D-4ADD-BF44-81EEB6EE5861}.tap
+Wed Jun 13 11:14:20 2018 TAP-Windows Driver Version 9.21 
+Wed Jun 13 11:14:20 2018 Notified TAP-Windows driver to set a DHCP IP/netmask of 10.127.224.134/255.255.255.252 on interface {246C619C-084D-4ADD-BF44-81EEB6EE5861} [DHCP-serv: 10.127.224.133, lease-time: 31536000]
+Wed Jun 13 11:14:20 2018 Successful ARP Flush on interface [7] {246C619C-084D-4ADD-BF44-81EEB6EE5861}
+Wed Jun 13 11:14:20 2018 do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Wed Jun 13 11:14:20 2018 MANAGEMENT: >STATE:1528868660,ASSIGN_IP,,10.127.224.134,,,,
+Wed Jun 13 11:14:25 2018 TEST ROUTES: 2/2 succeeded len=2 ret=1 a=0 u/d=up
+Wed Jun 13 11:14:25 2018 MANAGEMENT: >STATE:1528868665,ADD_ROUTES,,,,,,
+Wed Jun 13 11:14:25 2018 C:\Windows\system32\route.exe ADD 10.127.208.0 MASK 255.255.248.0 10.127.224.133
+Wed Jun 13 11:14:25 2018 Route addition via service succeeded
+Wed Jun 13 11:14:25 2018 C:\Windows\system32\route.exe ADD 10.127.224.1 MASK 255.255.255.255 10.127.224.133
+Wed Jun 13 11:14:25 2018 Route addition via service succeeded
+Wed Jun 13 11:14:25 2018 WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+Wed Jun 13 11:14:25 2018 Initialization Sequence Completed
+Wed Jun 13 11:14:25 2018 MANAGEMENT: >STATE:1528868665,CONNECTED,SUCCESS,10.127.224.134,13.229.162.146,1194,,
+Wed Jun 13 11:14:29 2018 C:\Windows\system32\route.exe DELETE 10.127.208.0 MASK 255.255.248.0 10.127.224.133
+Wed Jun 13 11:14:29 2018 Route deletion via service succeeded
+Wed Jun 13 11:14:29 2018 C:\Windows\system32\route.exe DELETE 10.127.224.1 MASK 255.255.255.255 10.127.224.133
+Wed Jun 13 11:14:29 2018 Route deletion via service succeeded
+Wed Jun 13 11:14:29 2018 Closing TUN/TAP interface
